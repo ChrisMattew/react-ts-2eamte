@@ -1,0 +1,29 @@
+.avatar-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.avatar {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(167, 167, 167);
+}
+.avatar-img {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+}
+
+.circle > .avatar {
+  border-radius: 50%;
+}
+.rounded > .avatar {
+  border-radius: 5%;
+}

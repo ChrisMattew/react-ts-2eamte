@@ -1,0 +1,29 @@
+.status-bar-container {
+  height: 2rem;
+  width: 100%;
+  background: rgb(71, 150, 71);
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.status-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(75, 211, 75);
+  transition: all 1s;
+}
+.half-load {
+  background: rgb(253, 220, 129);
+}
+.half-load-bar {
+  background: rgb(255, 196, 1);
+}
+.overload {
+  background: rgb(226, 97, 97);
+}
+.overload-bar {
+  background: rgb(255, 0, 0);
+}

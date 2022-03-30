@@ -1,0 +1,7 @@
+.status-box {
+  flex: 1;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

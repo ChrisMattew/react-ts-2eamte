@@ -1,0 +1,33 @@
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  color: #fff;
+  margin: 0 0.8rem;
+  position: relative;
+}
+.nav-link::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  left: 50%;
+  height: 2px;
+  bottom: -1px;
+  background: #0ec8aa;
+  transition: 250ms;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  right: 50%;
+  bottom: -1px;
+  background: #0ec8aa;
+  transition: 250ms;
+}
+.nav-link:hover::before,
+.nav-link:hover::after {
+  width: 50%;
+}
