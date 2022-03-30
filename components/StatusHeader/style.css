@@ -1,0 +1,13 @@
+.status-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.status-img {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
