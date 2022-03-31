@@ -4,7 +4,7 @@ import './style';
 
 type Props = {
   title: string;
-  value: string;
+  value: number;
 };
 const TitleAndValue = ({ title, value }: Props) => {
   return (
