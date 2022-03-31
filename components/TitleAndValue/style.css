@@ -1,0 +1,11 @@
+.title-val-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.key-title {
+  flex: 1;
+}
+.value-of-key-title {
+  flex: 1;
+}

@@ -8,7 +8,7 @@ type Props = {
 };
 const StatusFooter = ({ actualHours, soldHours }: Props) => {
   return (
-    <div>
+    <div className='status-footer'>
       <Text type="p">{actualHours}</Text>
       <Text type="p">{soldHours}</Text>
     </div>

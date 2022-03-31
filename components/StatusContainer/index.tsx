@@ -10,6 +10,12 @@ const stats = [
     subtitle: 'subtest',
     imgUrl:
       'https://www.cosepercrescere.it/wp-content/uploads/2014/06/Macedonia.jpg',
+    actualHours: 'Actual Hours',
+    soldHours: 'Sold Hours',
+    budget: 'budget',
+    budgetVal: 0,
+    profit: 'profit',
+    profitVal: 0,
   },
   {
     id: 2,
@@ -18,6 +24,12 @@ const stats = [
     subtitle: 'subtest',
     imgUrl:
       'https://www.cosepercrescere.it/wp-content/uploads/2014/06/Macedonia.jpg',
+    actualHours: 'Actual Hours',
+    soldHours: 'Sold Hours',
+    budget: 'budget',
+    budgetVal: 0,
+    profit: 'profit',
+    profitVal: 0,
   },
   {
     id: 3,
@@ -26,6 +38,12 @@ const stats = [
     subtitle: 'subtest',
     imgUrl:
       'https://www.cosepercrescere.it/wp-content/uploads/2014/06/Macedonia.jpg',
+    actualHours: 'Actual Hours',
+    soldHours: 'Sold Hours',
+    budget: 'budget',
+    budgetVal: 0,
+    profit: 'profit',
+    profitVal: 0,
   },
   {
     id: 4,
@@ -34,6 +52,12 @@ const stats = [
     subtitle: 'subtest',
     imgUrl:
       'https://www.cosepercrescere.it/wp-content/uploads/2014/06/Macedonia.jpg',
+    actualHours: 'Actual Hours',
+    soldHours: 'Sold Hours',
+    budget: 'budget',
+    budgetVal: 0,
+    profit: 'profit',
+    profitVal: 0,
   },
 ];
 const StatusContainer = () => {
