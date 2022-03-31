@@ -2,12 +2,15 @@ import React from 'react';
 import Text from '../Text';
 import './style';
 
-type Props = {};
-const StatusFooter = () => {
+type Props = {
+  actualHours: string;
+  soldHours: string;
+};
+const StatusFooter = ({ actualHours, soldHours }: Props) => {
   return (
     <div>
-      <Text></Text>
-      <Text></Text>
+      <Text type="p">{actualHours}</Text>
+      <Text type="p">{soldHours}</Text>
     </div>
   );
 };
