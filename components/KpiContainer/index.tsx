@@ -26,14 +26,14 @@ const kpis = [
   },
   {
     id: 3,
-    icon: faExclamationTriangle,
-    error: true,
+    icon: faRedo,
     title: 'Ongoing',
     value: 3,
   },
   {
     id: 4,
-    icon: faRedo,
+    icon: faExclamationTriangle,
+    error: true,
     title: 'Delayed',
     value: 4,
   },

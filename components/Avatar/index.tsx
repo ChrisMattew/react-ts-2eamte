@@ -14,6 +14,7 @@ const Avatar = ({ imgUrl, className, name, shape }: Props) => {
   };
   const [[nameInitialChar]] = name.split(' ');
   const [lastNameInitialChar] = last(name.split(' '));
+  const [firstName] = name.split(' ');
 
   const classNames = [
     'avatar-box',
@@ -36,7 +37,7 @@ const Avatar = ({ imgUrl, className, name, shape }: Props) => {
           <Text type="h4">{nameInitialChar + lastNameInitialChar}</Text>
         )}
       </div>
-      <Text type="h4">{name}</Text>
+      <Text type="h4">{firstName}</Text>
     </div>
   );
 };

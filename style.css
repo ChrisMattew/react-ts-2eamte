@@ -14,3 +14,8 @@ body {
   background: rgb(241, 241, 241);
   height: 100vh;
 }
+.test-mood-range {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

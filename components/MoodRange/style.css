@@ -1,0 +1,35 @@
+.mood-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #d3d3d3;
+  height: 0.2rem;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 1rem;
+}
+.mood-slider:hover {
+  opacity: 1;
+}
+.mood-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.angry_mood::-webkit-slider-thumb {
+  background: url('https://toppng.com/uploads/preview/emoji-anger-emoticon-iphone-angry-emoji-115630146799aeoop7kx6.png');
+  background-size: cover;
+}
+.bored_mood::-webkit-slider-thumb {
+  background: url('https://cdn.pixabay.com/photo/2020/12/27/20/24/emoji-5865207_1280.png');
+  background-size: cover;
+}
+.happy_mood::-webkit-slider-thumb {
+  background: url('https://www.clipartmax.com/png/middle/22-221472_emoji-png-ile-ilgili-g%C3%B6rsel-sonucu-beaming-face-with-smiling-eyes-emoji.png')
+    center center;
+  background-size: cover;
+}
