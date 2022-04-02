@@ -6,9 +6,10 @@ type Props = {
   imgUrl?: string;
   className?: string;
   name: string;
+  job?: string;
   shape: 'circle' | 'rounded';
 };
-const Avatar = ({ imgUrl, className, name, shape }: Props) => {
+const Avatar = ({ imgUrl, className, name, job, shape }: Props) => {
   const last = (array: string[]): string => {
     return array[array.length - 1];
   };
@@ -37,7 +38,10 @@ const Avatar = ({ imgUrl, className, name, shape }: Props) => {
           <Text type="h4">{nameInitialChar + lastNameInitialChar}</Text>
         )}
       </div>
-      <Text type="h4">{firstName}</Text>
+      <div className="avatar-text">
+        <Text type="h4">{firstName}</Text>
+        {job ? <Text type="p">{job}</Text> : null}
+      </div>
     </div>
   );
 };

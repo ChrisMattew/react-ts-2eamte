@@ -20,7 +20,10 @@
   width: 100%;
   background-size: contain;
 }
-
+.avatar-text {
+  display: flex;
+  flex-direction: column;
+}
 .circle > .avatar {
   border-radius: 50%;
 }
