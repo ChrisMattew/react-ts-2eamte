@@ -5,6 +5,8 @@
   align-items: center;
   position: relative;
   height: 10vw;
+}
+.kpi-paper {
   flex: 1;
-  width: 100%;
+  background: #fff;
 }

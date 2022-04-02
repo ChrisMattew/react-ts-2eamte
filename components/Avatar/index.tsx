@@ -8,8 +8,9 @@ type Props = {
   name: string;
   job?: string;
   shape: 'circle' | 'rounded';
+  color: string;
 };
-const Avatar = ({ imgUrl, className, name, job, shape }: Props) => {
+const Avatar = ({ imgUrl, className, name, job, shape, color }: Props) => {
   const last = (array: string[]): string => {
     return array[array.length - 1];
   };
@@ -39,8 +40,14 @@ const Avatar = ({ imgUrl, className, name, job, shape }: Props) => {
         )}
       </div>
       <div className="avatar-text">
-        <Text type="h4">{firstName}</Text>
-        {job ? <Text type="p">{job}</Text> : null}
+        <Text color={color} type="h4">
+          {firstName}
+        </Text>
+        {job ? (
+          <Text color={color} type="p">
+            {job}
+          </Text>
+        ) : null}
       </div>
     </div>
   );

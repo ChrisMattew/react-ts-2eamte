@@ -1,5 +1,7 @@
 .avatar-mood-box {
   display: flex;
   width: 100%;
+  height: 6rem;
+  justify-content: space-evenly;
   flex-direction: column;
 }

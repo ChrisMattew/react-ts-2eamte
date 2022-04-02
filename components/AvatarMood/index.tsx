@@ -11,7 +11,13 @@ type Props = {
 const AvatarMood = ({ name, job, imgUrl }: Props) => {
   return (
     <div className="avatar-mood-box">
-      <Avatar name={name} job={job} imgUrl={imgUrl} shape="circle" />
+      <Avatar
+        color="#000"
+        name={name}
+        job={job}
+        imgUrl={imgUrl}
+        shape="circle"
+      />
       <MoodRange min={1} max={3} />
     </div>
   );

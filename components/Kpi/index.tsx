@@ -15,7 +15,7 @@ type Props = {
 
 const Kpi = ({ title, value, icon, error }: Props) => {
   return (
-    <Paper danger={error}>
+    <Paper className='kpi-paper' danger={error}>
       <div className="inner-container">
         {icon && <Icon icon={icon} />}
         <Text type="h1" weight="bold">
