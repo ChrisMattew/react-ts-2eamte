@@ -10,9 +10,9 @@
   display: flex;
   justify-content: flex-end;
 }
-.selected-swtich::after {
+.selected-switch::after {
   content: '1';
 }
-.selected-swtich::before {
+.selected-switch::before {
   content: '2';
 }

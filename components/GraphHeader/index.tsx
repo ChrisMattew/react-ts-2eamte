@@ -10,10 +10,10 @@ const GraphHeader = ({ title }: Props) => {
   return (
     <div className="graph-header">
       <div className="graph-title">
-        <Text type="h4">{title}</Text>
+        <Text type="h6">{title}</Text>
       </div>
       <div className="graph-switch">
-        <SwitchBtn className='selected-swtich' />
+        <SwitchBtn className="selected-switch" />
       </div>
     </div>
   );

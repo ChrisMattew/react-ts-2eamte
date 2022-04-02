@@ -36,11 +36,11 @@ const Avatar = ({ imgUrl, className, name, job, shape, color }: Props) => {
             style={{ backgroundImage: `url(${imgUrl})` }}
           />
         ) : (
-          <Text type="h4">{nameInitialChar + lastNameInitialChar}</Text>
+          <Text type="h5">{nameInitialChar + lastNameInitialChar}</Text>
         )}
       </div>
       <div className="avatar-text">
-        <Text color={color} type="h4">
+        <Text color={color} type="h6">
           {firstName}
         </Text>
         {job ? (

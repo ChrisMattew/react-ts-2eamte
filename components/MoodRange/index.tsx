@@ -8,7 +8,7 @@ type Props = {
 };
 const MoodRange = ({ max, min }: Props) => {
   const [state, setSlide] = useState((max + min) / 2);
-  const handleChange = (event) => {
+  const handleChange = (event: any) => {
     setSlide(event.target.value);
   };
 

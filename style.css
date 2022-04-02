@@ -11,17 +11,6 @@ body {
   margin: 0;
   padding: 0;
 }
-.main {
-  display: grid;
-  grid-template-rows: 8vh 18vh 45vh 20vh;
-  grid-template-areas:
-    'head head head head head head head'
-    ' . kpis kpis kpis kpis team .'
-    ' . graph graph graph graph team .'
-    ' . status status status status status .';
-  gap: 2rem;
-  padding-bottom: 5rem;
-}
 .main-header {
   grid-area: head;
 }
@@ -36,4 +25,15 @@ body {
 }
 .main-status-container {
   grid-area: status;
+}
+.main {
+  display: grid;
+  grid-template-rows: 8vh 18vh 45vh 25vh;
+  grid-template-areas:
+    'head head head head head head head'
+    ' . kpis kpis kpis kpis team .'
+    ' . graph graph graph graph team .'
+    ' . status status status status status .';
+  gap: 2rem;
+  padding-bottom: 5rem;
 }

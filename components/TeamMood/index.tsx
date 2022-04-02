@@ -40,7 +40,7 @@ type Props = {
 const TeamMood = ({ className }: Props) => {
   return (
     <Paper className={classnames('team-mood-container', className)}>
-      <Text type="h3">Team Mood</Text>
+      <Text type="h5">Team Mood</Text>
       {team.map((member) => (
         <AvatarMood key={member.id} {...member} />
       ))}
