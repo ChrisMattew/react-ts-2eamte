@@ -13,13 +13,14 @@ body {
 }
 .main {
   display: grid;
-  grid:
+  grid-template-rows: 8vh 18vh 45vh 20vh;
+  grid-template-areas:
     'head head head head head head head'
-    'kpis kpis kpis kpis kpis kpis team'
-    'graph graph graph graph graph graph team'
-    'graph graph graph graph graph graph team '
-    'status status status status status status status';
+    ' . kpis kpis kpis kpis team .'
+    ' . graph graph graph graph team .'
+    ' . status status status status status .';
   gap: 2rem;
+  padding-bottom: 5rem;
 }
 .main-header {
   grid-area: head;
