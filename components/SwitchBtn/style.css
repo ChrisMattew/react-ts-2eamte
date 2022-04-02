@@ -1,7 +1,7 @@
 .switch {
   position: relative;
-  width: 2rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 0.3rem;
 }
 .switch input {
   display: none;
@@ -20,24 +20,28 @@
   border-radius: 1rem;
 }
 
-.slider:before {
+.slider::before {
   position: absolute;
   content: '';
-  height: 1rem;
-  width: 1rem;
-  bottom: 0;
-  left: 0;
-
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  height: 1.1rem;
+  width: 1.1rem;
+  top: 0.15rem;
+  transform: translateY(-50%);
+  left: -25%;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  -webkit-transition: 300ms;
+  transition: 300ms;
   border-radius: 50%;
+}
+.slider:hover::before {
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.3);
 }
 
 .switch input:checked + .slider {
   background-color: #0ec8aa;
 }
 
-.switch input:checked + .slider:before {
-  transform: translateX(100%);
+.switch input:checked + .slider::before {
+  transform: translate(100%, -50%);
 }
