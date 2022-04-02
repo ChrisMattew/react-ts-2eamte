@@ -10,6 +10,7 @@ import {
   faPeopleGroup,
 } from '@fortawesome/free-solid-svg-icons';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons/faExclamationTriangle';
+import classnames from 'classnames';
 
 const kpis = [
   {
@@ -44,10 +45,12 @@ const kpis = [
     value: 5,
   },
 ];
-
-const KpiContainer = () => {
+type Props = {
+  className?: string;
+};
+const KpiContainer = ({ className }: Props) => {
   return (
-    <section className="kpi-container">
+    <section className={classnames('kpi-container', className)}>
       {kpis.map((kpi) => (
         <Kpi key={kpi.id} {...kpi} />
       ))}

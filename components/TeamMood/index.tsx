@@ -3,6 +3,7 @@ import AvatarMood from '../AvatarMood';
 import Paper from '../Paper';
 import Text from '../Text';
 import './style';
+import classnames from 'classnames';
 
 const team = [
   {
@@ -32,9 +33,13 @@ const team = [
   },
 ];
 
-const TeamMood = () => {
+type Props = {
+  className?: string;
+};
+
+const TeamMood = ({ className }: Props) => {
   return (
-    <Paper className="team-mood-container">
+    <Paper className={classnames('team-mood-container', className)}>
       <Text type="h3">Team Mood</Text>
       {team.map((member) => (
         <AvatarMood key={member.id} {...member} />

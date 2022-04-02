@@ -1,6 +1,7 @@
 import React from 'react';
 import StatusBox from '../StatusBox';
 import './style';
+import classnames from 'classnames';
 
 const stats = [
   {
@@ -60,9 +61,14 @@ const stats = [
     profitVal: 0,
   },
 ];
-const StatusContainer = () => {
+
+type Props = {
+  className?: string;
+};
+
+const StatusContainer = ({ className }: Props) => {
   return (
-    <section className="status-container">
+    <section className={classnames('status-container', className)}>
       {stats.map((stat) => (
         <StatusBox key={stat.id} {...stat} />
       ))}

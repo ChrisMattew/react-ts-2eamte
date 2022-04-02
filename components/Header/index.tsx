@@ -2,11 +2,15 @@ import React from 'react';
 import Logo from '../Logo';
 import Navbar from '../Navbar';
 import Avatar from '../Avatar';
+import classnames from 'classnames';
 import './style';
 
-const Header = () => {
+type Props = {
+  className?: string;
+};
+const Header = ({ className }: Props) => {
   return (
-    <header className="header">
+    <header className={classnames('header', className)}>
       <div className="head-left-side">
         <Logo />
       </div>

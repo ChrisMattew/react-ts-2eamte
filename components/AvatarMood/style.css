@@ -4,4 +4,5 @@
   height: 6rem;
   justify-content: space-evenly;
   flex-direction: column;
+  border-bottom: 0.05rem solid #ccc;
 }

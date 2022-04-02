@@ -8,7 +8,7 @@ type Props = {
   name: string;
   job?: string;
   shape: 'circle' | 'rounded';
-  color: string;
+  color?: string;
 };
 const Avatar = ({ imgUrl, className, name, job, shape, color }: Props) => {
   const last = (array: string[]): string => {
