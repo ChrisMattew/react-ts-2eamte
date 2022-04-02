@@ -2,7 +2,7 @@ body {
   height: 100vh;
   margin: 0 1rem;
   background: rgb(241, 241, 241);
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
 }
 *,
 *::after,
@@ -14,15 +14,12 @@ body {
 .main {
   display: grid;
   grid:
-    'head head head head head head'
-    'kpis kpis kpis kpis kpis team'
-    'status status status status status team';
-  height: 100vh;
-}
-.test-mood-range {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
+    'head head head head head head head'
+    'kpis kpis kpis kpis kpis kpis team'
+    'graph graph graph graph graph graph team'
+    'graph graph graph graph graph graph team '
+    'status status status status status status status';
+  gap: 2rem;
 }
 .main-header {
   grid-area: head;
@@ -32,6 +29,9 @@ body {
 }
 .main-team-mood-container {
   grid-area: team;
+}
+.main-graph-container {
+  grid-area: graph;
 }
 .main-status-container {
   grid-area: status;

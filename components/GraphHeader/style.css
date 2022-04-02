@@ -1,0 +1,18 @@
+.graph-header {
+  display: flex;
+  flex-direction: row;
+}
+.graph-title {
+  flex: 1;
+}
+.graph-switch {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.selected-swtich::after {
+  content: '1';
+}
+.selected-swtich::before {
+  content: '2';
+}
